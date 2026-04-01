@@ -3,34 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Landing Page – Francisco Ferreira</title>
+    <title>Mini Progetto HTML/CSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="hero">
-        <h1>Francisco Ferreira</h1>
-        <p>Web Designer & Frontend Developer</p>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Il Mio Progetto</h1>
+            <nav class="nav">
+                <a href="#hero">Home</a>
+                <a href="#about">Chi sono</a>
+                <a href="#services">Servizi</a>
+            </nav>
+        </div>
     </header>
 
-    <section class="about">
-        <h2>Chi sono</h2>
-        <p>Creo interfacce web pulite, performanti e orientate all’esperienza utente.</p>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <div>
+                <h2>Benvenuto nel mio progetto</h2>
+                <p>Una semplice landing page creata con HTML, CSS e Git. Perfetta per iniziare il mio percorso di sviluppo web.</p>
+                <a href="#about" class="btn">Scopri di più</a>
+            </div>
+
+            <img src="assets/hero.jpg" alt="Immagine hero" class="hero-img">
+        </div>
     </section>
 
-    <section class="skills">
-        <h2>Competenze</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>UX/UI Design</li>
-            <li>Woocommerce</li>
-            <li>WordPress</li>
-        </ul>
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Chi sono</h2>
+            <p>Sono Francisco, uno sviluppatore in formazione. Questo progetto è parte del mio percorso per imparare Git, GitHub e lo sviluppo front-end.</p>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2026 Francisco Ferreira</p>
+    <!-- SERVICES -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Cosa faccio</h2>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>HTML</h3>
+                    <p>Creo strutture pulite, semantiche e facili da mantenere.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>CSS</h3>
+                    <p>Stili moderni, responsive e piacevoli da vedere.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Git & GitHub</h3>
+                    <p>Versionamento professionale del codice e repository ordinati.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2024 Francisco Ferreira — Mini Progetto HTML/CSS</p>
     </footer>
 
 </body>
